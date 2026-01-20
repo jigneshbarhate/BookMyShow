@@ -65,7 +65,7 @@ const Home = () => {
     setLastBooking({ isFinishLoading: false });
 
     axios
-      .get("https://book-that-show.onrender.com/api/booking")
+      .get("https://bookmyshow-ktcy.onrender.com/api/booking")
       .then((res) => {
         if (typeof res.data.message === "string") {
           setLastBooking({
@@ -171,7 +171,7 @@ const Home = () => {
 
     //post request
     axios
-      .post("https://book-that-show.onrender.com/api/booking", {
+      .post("https://bookmyshow-ktcy.onrender.com/api/booking", {
         movie: state.movie,
         slot: state.timeSlots,
         seats: {
